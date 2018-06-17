@@ -7,27 +7,27 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: dependency-cache-{{ checksum "yarn.lock" }}
+          key: dependency-cache-{{ checksum "npm.lock" }}
       - run:
           name: install-dependencies
-          command: yarn install
+          command: npm install
       - save_cache:
-          key: dependency-cache-{{ checksum "yarn.lock" }}
+          key: dependency-cache-{{ checksum "npm.lock" }}
           paths:
-            - ~/.cache/yarn
+            - ~/.cache/npm
             - ./node_modules
       - run:
           name: angular-build
-          command: yarn ng -- build --prod --aot --no-progress
+          command: npm ng -- build --prod --aot --no-progress
       - run:
           name: angular-test
-          command: yarn test -- --single-run --no-progress
+          command: npm test -- --single-run --no-progress
       - store_artifacts:
           path: test-results.xml
           prefix: tests
       - run:
           name: angular-lint
-          command: yarn lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
+          command: npm lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
       - store_artifacts:
           path: tslint.xml
           prefix: lint
