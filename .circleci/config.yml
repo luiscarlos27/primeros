@@ -11,6 +11,9 @@ jobs:
       - run:
           name: install-dependencies
           command: npm install
+      - run:
+          name: install-dependencies-ng
+          command: npm install angular-cli@latest -g
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
