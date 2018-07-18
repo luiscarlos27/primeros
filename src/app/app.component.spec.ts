@@ -1,10 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ButtonModule } from 'primeng/button';
+import {PasswordModule} from 'primeng/password';
+import {CardModule} from 'primeng/card';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
+      ],
+      imports: [
+        ButtonModule,
+        PasswordModule,
+        CardModule
       ],
     }).compileComponents();
   }));
