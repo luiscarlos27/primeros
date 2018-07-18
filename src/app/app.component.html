@@ -1,8 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Bienvienido {{ title }}!
+    Bienvenido {{ title }}!
   </h1>
 </div>
-<h3>Componentes</h3>
+
+<p-card [style]="{width: '360px',height:'400px'}">
+    <div class="ui-g-12 ui-md-12">
+      <div class="ui-inputgroup">
+          <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+          <input type="text" pInputText placeholder="Username">         
+      </div>
+    </div>
+    <div class="ui-g-12 ui-md-12">
+      <div class="ui-inputgroup">
+          <span class="ui-inputgroup-addon"><i class="fa fa-key"></i></span>
+          <input type="text" pInputText placeholder="Password">         
+      </div>
+    </div>
+    <div class="ui-g-12 ui-md-12">
+      <div class="ui-inputgroup">
+        <button pButton type="button" label="Cancelar"></button>
+        <button pButton type="button" label="Ingresar"></button>        
+      </div>
+    </div>
+</p-card>
+
+
 

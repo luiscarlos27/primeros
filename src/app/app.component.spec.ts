@@ -22,6 +22,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Bienvienido - Nueva App con Angular 5 y primeng 6');
+    expect(compiled.querySelector('h1').textContent).toContain('Bienvenido - Nueva App con Angular 5 y primeng 6');
   }));
 });

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
+import {PasswordModule} from 'primeng/password';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { ButtonModule } from 'primeng/button';
   ],
   imports: [
     BrowserModule,
-    ButtonModule
+    ButtonModule,
+    PasswordModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
