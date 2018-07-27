@@ -30,5 +30,28 @@
 
 <p>Comentario de Prueba Wilfer</p>
 
+<!--<div class="row btn bg-primary left">
+  <div class="col" style="min-height: 200px; min-width: 400px; max-width: 600px;">
+    <div ngResizable class="resizable-widget">
+      <h4 class="widget-header">Información</h4>
+    </div>
+  </div>
+</div>
+<div class="row btn bg-danger right">
+  <div class="col" style="min-height: 200px; min-width: 700px;">
+    <div ngResizable class="resizable-widget">
+      <h4 class="widget-header">Mapa</h4>
+    </div>
+  </div>
+</div>-->
 
+<!--<p-orderList [value]="cars" [listStyle]="{'height':'250px'}" [responsive]="true" header="Puntos de Visita" 
+    filter="filter" filterBy="brand" filterPlaceholder="Filter by brand" dragdrop="true" dragdropScope="cars">
+    <ng-template let-car pTemplate="item">
+        <div class="ui-helper-clearfix">
+            <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{car.brand}} - {{car.year}} - {{car.color}}</div>
+        </div>
+    </ng-template>
+</p-orderList>-->
 
+<dual-list [source]="source" [(destination)]="confirmed"></dual-list>
