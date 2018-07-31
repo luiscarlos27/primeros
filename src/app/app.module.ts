@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import {PasswordModule} from 'primeng/password';
 import {CardModule} from 'primeng/card';
-import { AngularDraggableModule } from 'angular2-draggable';
+//import { AngularDraggableModule } from 'angular2-draggable';
 import {OrderListModule} from 'primeng/orderlist';
 import { AngularDualListBoxModule } from 'angular-dual-listbox';
 
@@ -18,9 +18,9 @@ import { AngularDualListBoxModule } from 'angular-dual-listbox';
     ButtonModule,
     PasswordModule,
     CardModule
-    ,AngularDraggableModule
-    ,OrderListModule
-    ,AngularDualListBoxModule
+    //,AngularDraggableModule
+    //,OrderListModule
+    //,AngularDualListBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
