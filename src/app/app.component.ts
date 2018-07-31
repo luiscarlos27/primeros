@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core'
 
 declare var $: any;
 @Component({
@@ -6,6 +6,7 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = '- Nueva App con Angular 5 y primeng 6';
+export class AppComponent { 
+    title = '- Nueva App con Angular 5 y primeng 6'
+    hola = 'dsfdf'
 }

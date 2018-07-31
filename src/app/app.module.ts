@@ -5,9 +5,6 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import {PasswordModule} from 'primeng/password';
 import {CardModule} from 'primeng/card';
-//import { AngularDraggableModule } from 'angular2-draggable';
-import {OrderListModule} from 'primeng/orderlist';
-import { AngularDualListBoxModule } from 'angular-dual-listbox';
 
 @NgModule({
   declarations: [
@@ -17,11 +14,7 @@ import { AngularDualListBoxModule } from 'angular-dual-listbox';
     BrowserModule,
     ButtonModule,
     PasswordModule,
-    CardModule
-    //,AngularDraggableModule
-    //,OrderListModule
-    //,AngularDualListBoxModule
-  ],
+    CardModule],
   providers: [],
   bootstrap: [AppComponent]
 })

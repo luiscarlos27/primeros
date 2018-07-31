@@ -13,7 +13,7 @@ jobs:
           command: npm install
       - run:
           name: install-dependencies-ng
-          command: sudo npm i @angular/cli -g
+          command: sudo npm i @angular/cli@latest -g
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
