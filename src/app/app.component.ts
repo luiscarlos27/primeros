@@ -13,6 +13,7 @@ export class AppComponent {
 
   ngOnInit() {
      this.confirmed = [
-      { _id: 1, name: 'Pawn' }];
+      { _id: 1, name: 'Pawn' }
+    ]
   } 
 }
