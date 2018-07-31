@@ -1,5 +1,5 @@
 import { Component, OnInit  } from '@angular/core';
-import { DualListComponent } from 'angular-dual-listbox';
+//import { DualListComponent } from 'angular-dual-listbox';
 
 declare var $: any;
 @Component({
