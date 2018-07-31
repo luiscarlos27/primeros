@@ -1,5 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
-//import { DualListComponent } from 'angular-dual-listbox';
+import { Component} from '@angular/core';
 
 declare var $: any;
 @Component({
@@ -9,11 +8,4 @@ declare var $: any;
 })
 export class AppComponent {
   title = '- Nueva App con Angular 5 y primeng 6';
-  confirmed:Array<any>;
-
-  ngOnInit() {
-     this.confirmed = [
-      { _id: 1, name: 'Pawn' }
-    ]
-  } 
 }
