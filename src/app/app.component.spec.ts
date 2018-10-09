@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import {PasswordModule} from 'primeng/password';
 import {CardModule} from 'primeng/card';
+import { AngularSplitModule } from 'angular-split';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -12,7 +13,8 @@ describe('AppComponent', () => {
       imports: [
         ButtonModule,
         PasswordModule,
-        CardModule
+        CardModule,
+        AngularSplitModule
       ],
     }).compileComponents();
   }));
